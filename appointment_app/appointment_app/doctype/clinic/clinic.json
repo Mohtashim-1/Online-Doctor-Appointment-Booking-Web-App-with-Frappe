@@ -10,9 +10,10 @@
  "engine": "InnoDB",
  "field_order": [
   "contact_number",
-  "address",
+  "route",
+  "column_break_2x5hi",
   "is_published",
-  "route"
+  "address"
  ],
  "fields": [
   {
@@ -24,7 +25,7 @@
   },
   {
    "fieldname": "address",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Address"
   },
   {
@@ -36,15 +37,18 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
-   "label": "Route",
-   "reqd": 1
+   "label": "Route"
+  },
+  {
+   "fieldname": "column_break_2x5hi",
+   "fieldtype": "Column Break"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-04-18 01:01:56.429438",
+ "modified": "2024-04-18 01:10:16.036983",
  "modified_by": "Administrator",
  "module": "Appointment App",
  "name": "Clinic",
