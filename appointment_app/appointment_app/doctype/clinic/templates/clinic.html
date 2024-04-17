@@ -12,14 +12,16 @@
 {% set doctor = frappe.get_doc("Doctor", doc.doctor) %}
 
 <p><strong>Doctor</strong></p>
-<p>{{doctor.full_name}}</p>
+<p>{{doctor.full_name}}, {{doctor.speciality}}</p>
 
+<p><strong>Timings</strong></p>
 <ul>
 {% for shifts in doctor.doctor_shift %}
 <li>{{shifts.start_time}} - {{shifts.end_time}}</li>
     {% endfor %}
 </ul>
    
+<a href="#" class="btn btn-info">Book Appointment</a>
 
 
 
