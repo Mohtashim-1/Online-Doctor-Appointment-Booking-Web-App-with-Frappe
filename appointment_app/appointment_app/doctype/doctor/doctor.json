@@ -1,6 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "autoincrement",
  "creation": "2024-04-18 01:13:58.011266",
  "default_view": "List",
  "doctype": "DocType",
@@ -10,6 +10,7 @@
   "first_name",
   "last_name",
   "full_name",
+  "column_break_iasec",
   "qualification",
   "speciality"
  ],
@@ -29,7 +30,8 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full Name"
+   "label": "Full Name",
+   "read_only": 1
   },
   {
    "fieldname": "qualification",
@@ -42,14 +44,19 @@
    "in_list_view": 1,
    "label": "Speciality",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_iasec",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-18 01:13:58.011266",
+ "modified": "2024-04-18 01:24:31.820294",
  "modified_by": "Administrator",
  "module": "Appointment App",
  "name": "Doctor",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
@@ -65,9 +72,11 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "full_name",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1
