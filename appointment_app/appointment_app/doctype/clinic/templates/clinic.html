@@ -15,11 +15,12 @@
 <p>{{doctor.full_name}}</p>
 
 <ul>
-{% for shift in doctor.shifts %}
-    <li>{{doc.start_time}} - {{doc.end_time}}</li>
-  
-{% endfor %}
+{% for shifts in doctor.doctor_shift %}
+<li>{{shifts.start_time}} - {{shifts.end_time}}</li>
+    {% endfor %}
 </ul>
+   
+
 
 
 {% endblock %}
