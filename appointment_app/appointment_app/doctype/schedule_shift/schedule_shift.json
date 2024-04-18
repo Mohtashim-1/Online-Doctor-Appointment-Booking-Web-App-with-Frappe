@@ -15,14 +15,14 @@
  "fields": [
   {
    "fieldname": "start_time",
-   "fieldtype": "Data",
+   "fieldtype": "Time",
    "in_list_view": 1,
    "label": "Start Time",
    "reqd": 1
   },
   {
    "fieldname": "end_time",
-   "fieldtype": "Data",
+   "fieldtype": "Time",
    "in_list_view": 1,
    "label": "End Time",
    "reqd": 1
@@ -43,7 +43,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-18 14:50:09.272078",
+ "modified": "2024-04-18 16:40:57.686217",
  "modified_by": "Administrator",
  "module": "Appointment App",
  "name": "Schedule Shift",

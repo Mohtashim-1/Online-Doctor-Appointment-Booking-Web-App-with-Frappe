@@ -5,4 +5,12 @@
 from frappe.model.document import Document
 
 class Appointments(Document):
-	pass
+	def after_insert(self):
+		self.add_to_appointment_queue()
+
+		def add_to_appointment_queue(self):
+			frappe.get_doc('Appointment Queue',{
+				'date':self.date,
+				'shift':self.shift,
+				'clinic':self.clinic,
+			})
