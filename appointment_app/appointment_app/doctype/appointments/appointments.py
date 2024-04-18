@@ -6,11 +6,18 @@ from frappe.model.document import Document
 
 class Appointments(Document):
 	def after_insert(self):
-		self.add_to_appointment_queue()
+		print("Your queue number is :",self.add_to_appointment_queue())
 
 		def add_to_appointment_queue(self):
-			frappe.get_doc('Appointment Queue',{
+			q = frappe.get_doc('Appointment Queue',{
 				'date':self.date,
 				'shift':self.shift,
 				'clinic':self.clinic,
 			})
+			q.append("queue",{
+				"appointment":self.name,
+				"status":"Pending"
+			})
+			q.save(ignore_permission=True)
+
+			return len(q.queue)
