@@ -9,7 +9,8 @@
  "field_order": [
   "date",
   "clinic",
-  "shift"
+  "shift",
+  "queue"
  ],
  "fields": [
   {
@@ -34,11 +35,17 @@
    "label": "Shift",
    "options": "Schedule Shift",
    "reqd": 1
+  },
+  {
+   "fieldname": "queue",
+   "fieldtype": "Table",
+   "label": "Queue",
+   "options": "Appointment Queue Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-18 16:19:27.569461",
+ "modified": "2024-04-18 16:23:53.788393",
  "modified_by": "Administrator",
  "module": "Appointment App",
  "name": "Appointment Queue",
