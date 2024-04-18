@@ -7,7 +7,7 @@
  "allow_print": 0,
  "anonymous": 0,
  "apply_document_permissions": 0,
- "button_label": "Save",
+ "button_label": "Book Appointment",
  "condition_json": "[]",
  "creation": "2024-04-18 12:45:45.915108",
  "doc_type": "Appointments",
@@ -19,7 +19,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2024-04-18 12:47:34.529956",
+ "modified": "2024-04-18 13:07:51.362514",
  "modified_by": "Administrator",
  "module": "Appointment App",
  "name": "book-appointment",
@@ -29,6 +29,8 @@
  "show_attachments": 0,
  "show_list": 0,
  "show_sidebar": 0,
+ "success_message": "TODO: Display the current queue number assigned to them",
+ "success_title": "Appointment Booked",
  "title": "Book Appointment",
  "web_form_fields": [
   {
@@ -45,15 +47,14 @@
   },
   {
    "allow_read_on_all_link_options": 0,
-   "fieldname": "clinic",
-   "fieldtype": "Link",
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
    "hidden": 0,
-   "label": "Clinic",
+   "label": "Contact Number",
    "max_length": 0,
    "max_value": 0,
-   "options": "Clinic",
    "read_only": 0,
-   "reqd": 1,
+   "reqd": 0,
    "show_in_filter": 0
   },
   {
@@ -66,6 +67,19 @@
    "max_length": 0,
    "max_value": 0,
    "options": "",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "clinic",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Clinic",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Clinic",
    "read_only": 0,
    "reqd": 1,
    "show_in_filter": 0
