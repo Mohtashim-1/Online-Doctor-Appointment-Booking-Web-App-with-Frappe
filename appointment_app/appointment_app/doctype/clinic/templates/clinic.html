@@ -14,6 +14,10 @@
 <p><strong>Doctor</strong></p>
 <p>{{doctor.full_name}}, {{doctor.speciality}}</p>
 
+<!-- {% set shifts = frappe.get_list("Schedule Shift", filter={"clinic":doc.name}, fields=["sta"])%} -->
+
+
+
 <p><strong>Timings</strong></p>
 <ul>
 {% for shifts in doctor.doctor_shift %}
