@@ -15,7 +15,7 @@
 <p>{{doctor.full_name}}, {{doctor.speciality}}</p>
 
 
-{% set shifts = frappe.get_list('Schedule Shift', fields=['start_time','end_time']) %}
+{% set shifts = frappe.get_list('Schedule Shift', filters={'clinic':doc.name},fields=['start_time','end_time']) %}
 
 <ul>
     {% for shift in shifts %}
@@ -23,18 +23,18 @@
         {% endfor %}
     </ul>
 
-<ul>
+<!-- <ul>
     {% for shifts in doctor.shifts %}
     <li>{{shifts.start_time}} - {{shifts.end_time}}</li>
         {% endfor %}
-    </ul>
+    </ul> -->
 
-<p><strong>Timings</strong></p>
+<!-- <p><strong>Timings</strong></p>
 <ul>
 {% for shifts in doctor.doctor_shift %}
 <li>{{shifts.start_time}} - {{shifts.end_time}}</li>
     {% endfor %}
-</ul>
+</ul> -->
    
 <a href="#" class="btn btn-info">Book Appointment</a>
 
