@@ -15,7 +15,7 @@
  "fields": [
   {
    "fieldname": "start_time",
-   "fieldtype": "Time",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Start Time",
    "reqd": 1
@@ -43,7 +43,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-18 02:27:28.644194",
+ "modified": "2024-04-18 14:50:09.272078",
  "modified_by": "Administrator",
  "module": "Appointment App",
  "name": "Schedule Shift",
@@ -62,9 +62,11 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "title",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1
