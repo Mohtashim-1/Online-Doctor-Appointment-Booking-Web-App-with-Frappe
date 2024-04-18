@@ -14,7 +14,8 @@
   "qualification",
   "speciality",
   "section_break_yu4iu",
-  "doctor_shift"
+  "doctor_shift",
+  "shifts"
  ],
  "fields": [
   {
@@ -60,11 +61,17 @@
    "fieldtype": "Table",
    "label": "Shifts",
    "options": "Doctor Shift"
+  },
+  {
+   "fieldname": "shifts",
+   "fieldtype": "Table",
+   "label": "Shifts",
+   "options": "Doctor Shift"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-18 01:55:01.912225",
+ "modified": "2024-04-18 11:45:56.529520",
  "modified_by": "Administrator",
  "module": "Appointment App",
  "name": "Doctor",
